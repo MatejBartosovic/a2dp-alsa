@@ -1,0 +1,11 @@
+[Unit]
+Description=Bluetooth Simple Agent
+Requires=bluetooth.service
+After=bluetooth.service
+[Service]
+Type=simple
+#User=root
+#Group=audio
+ExecStart=/usr/bin/bt-agent -c NoInputNoOutput -p /etc/bluetooth/pin.file
+[Install]
+WantedBy=multi-user.target

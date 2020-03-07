@@ -1,0 +1,1 @@
+ bluealsa-aplay 00:00:00:00:00:00 -d hw:5,0
