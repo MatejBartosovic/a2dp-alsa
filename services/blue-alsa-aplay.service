@@ -1,0 +1,12 @@
+[Unit]
+Description=BlueAlsa-Aplay
+Requires=bluetooth.service blue-alsa.service
+[Service]
+Type=simple
+User=volumio
+Group=audio
+Environment=LD_LIBRARY_PATH=/usr/local/lib
+ExecStart=/usr/bin/bluealsa-aplay 00:00:00:00:00:00 --profile-a2dp -d plughw:CARD=S3,DEV=0
+[Install]
+WantedBy=multi-user.target
+
