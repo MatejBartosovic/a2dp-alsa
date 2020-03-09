@@ -1,0 +1,2 @@
+KERNEL=="hci*", ACTION=="add", SUBSYSTEM=="bluetooth",ENV{DEVTYPE}=="link", RUN+="/usr/local/bin/bluetooth_connect"
+KERNEL=="hci*", ACTION=="remove", SUBSYSTEM=="bluetooth",ENV{DEVTYPE}=="link", RUN+="/usr/local/bin/bluetooth_disconnect"

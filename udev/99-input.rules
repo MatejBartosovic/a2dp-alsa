@@ -1,4 +1,0 @@
-SUBSYSTEM="input", GROUP="input", MODE="0660"
-KERNEL=="input[0-9]*", ACTION=="add", RUN+="/bin/sh -c '/usr/local/bin/bluetooth_connect'"
-KERNEL=="input[0-9]*", ACTION=="remove", RUN+="/bin/sh -c '/usr/local/bin/bluetooth_disconnect'"
-
