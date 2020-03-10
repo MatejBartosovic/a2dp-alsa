@@ -4,8 +4,9 @@ Requires=bluetooth.service
 After=bluetooth.service
 [Service]
 Type=simple
-#User=root
+User=root
 #Group=audio
 ExecStart=/usr/bin/bt-agent -c NoInputNoOutput
+TimeoutSec=1
 [Install]
 WantedBy=multi-user.target

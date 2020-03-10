@@ -1,4 +1,4 @@
-cp -r bluetooth_config /etc/bluetooth
+sudo cp -r bluetooth_config/* /etc/bluetooth
 
 #sudo sudo systemctl restart bluetooth.service
 
