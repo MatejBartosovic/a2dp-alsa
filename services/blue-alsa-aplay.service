@@ -6,7 +6,7 @@ Type=simple
 User=root
 Group=audio
 Environment=LD_LIBRARY_PATH=/usr/local/lib
-ExecStart=/usr/bin/bluealsa-aplay 00:00:00:00:00:00 --profile-a2dp -d hw:1,0
+ExecStart=/usr/bin/bluealsa-aplay 00:00:00:00:00:00 --profile-a2dp -d default
 [Install]
 WantedBy=multi-user.target
 

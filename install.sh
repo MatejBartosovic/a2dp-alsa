@@ -1,5 +1,6 @@
 cd services
 ./install.sh
-cd ..
-cd udev 
+cd ../udev
+./install.sh
+cd ../alsa
 ./install.sh
