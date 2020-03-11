@@ -6,7 +6,7 @@ sudo sh -c 'echo "deb-src http://raspbian.raspberrypi.org/raspbian/ buster main 
 sudo apt update
 sudo apt -y upgrade
 sudo apt -y install htop git build-essential libasound2-dev libdbus-1-dev libsbc-dev autoconf libglib2.0-dev libtool bluez-tools
-sudo apt-get -y build-dep bluez
+sudo apt -y build-dep bluez
 ```
 * Build bluez - maybe check the latest release
 ```
