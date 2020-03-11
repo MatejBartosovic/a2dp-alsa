@@ -24,6 +24,6 @@ git clone https://github.com/Arkq/bluez-alsa
 cd blue-alsa
 autoreconf --install
 mkdir build && cd build
-../configure
+../configure --disable-hcitop --with-alsaplugindir=/usr/lib/arm-linux-gnueabihf/alsa-lib
 make
 ```
