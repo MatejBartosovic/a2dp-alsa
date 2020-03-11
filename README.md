@@ -7,6 +7,7 @@ sudo apt update
 sudo apt upgrade
 sudo apt -y install htop git build-essential libasound2-dev libdbus-1-dev libsbc-dev autoconf libglib2.0-dev libtool
 sudo apt-get build-dep bluez```
+```
 * Build bluez - maybe check the latest release
 ```
 git clone git://git.kernel.org/pub/scm/bluetooth/bluez.git
@@ -16,10 +17,6 @@ git checkout 5.53
 ./configure --enable-library --enable-experimental --enable-tools
 make
 sudo make install
-```
-* Install bluez-alsa dependencies
-```
-sudo apt install libsbc1 libsbc-dev
 ```
 * Build bluez-alsa
 ```
