@@ -2,11 +2,10 @@
 
 * Install all dependecies
 ```
-echo "deb-src http://raspbian.raspberrypi.org/raspbian/ buster main contrib non-free rpi" >> /etc/apt/sources.list
-sudo apt update
+sudo sh -c 'echo "deb-src http://raspbian.raspberrypi.org/raspbian/ buster main contrib non-free rpi" >> /etc/apt/sources.list'sudo apt update
 sudo apt upgrade
-sudo apt -y install htop git build-essential libasound2-dev libdbus-1-dev libsbc-dev autoconf libglib2.0-dev libtool
-sudo apt-get build-dep bluez```
+sudo apt -y install htop git build-essential libasound2-dev libdbus-1-dev libsbc-dev autoconf libglib2.0-dev libtool bluez-tools
+sudo apt-get -y build-dep bluez
 ```
 * Build bluez - maybe check the latest release
 ```
