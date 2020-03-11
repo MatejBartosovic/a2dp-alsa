@@ -7,6 +7,7 @@ sudo apt update
 sudo apt -y upgrade
 sudo apt -y install htop git build-essential libasound2-dev libdbus-1-dev libsbc-dev autoconf libglib2.0-dev libtool bluez-tools
 sudo apt -y build-dep bluez
+libtoolize
 ```
 * Build bluez - maybe check the latest release
 ```
@@ -20,7 +21,6 @@ sudo make install
 ```
 * Build bluez-alsa
 ```
-libtoolize
 git clone https://github.com/Arkq/bluez-alsa
 cd blue-alsa
 autoreconf --install
