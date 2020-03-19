@@ -1,3 +1,4 @@
+./compile_bluez.sh
 sudo cp -r config/* /etc/bluetooth
 
 #sudo sudo systemctl restart bluetooth.service
