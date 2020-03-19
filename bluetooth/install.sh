@@ -1,10 +1,14 @@
-sudo cp -r bluetooth_config/* /etc/bluetooth
+sudo cp -r config/* /etc/bluetooth
 
 #sudo sudo systemctl restart bluetooth.service
 
-sudo cp bt-agent.service /etc/systemd/system
-sudo cp blue-alsa.service /etc/systemd/system
-sudo cp blue-alsa-aplay.service /etc/systemd/system
+sudo cp services/bt-agent.service /etc/systemd/system
+sudo cp services/config/blue-alsa.service /etc/systemd/system
+sudo cp services/blue-alsa-aplay.service /etc/systemd/system
+
+cd udev
+./install.sh
+cd ..
 
 sudo systemctl daemon-reload
 

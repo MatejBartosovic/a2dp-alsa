@@ -1,8 +1,10 @@
-cd services
+cd alsa
 ./install.sh
-cd ../udev
+cd ../bluetooth
 ./install.sh
-cd ../alsa
+cd ../spotifyd
 ./install.sh
-cd spotifyd
+cd ../airplay
+./instal.sh
+cd /dlna
 ./install.sh
