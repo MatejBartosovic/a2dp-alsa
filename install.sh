@@ -1,4 +1,4 @@
-export SHELLOPTS
+#!/bin/bash
 set -e
 cd alsa
 ./install.sh
@@ -7,6 +7,6 @@ cd ../bluetooth
 cd ../spotifyd
 ./install.sh
 cd ../airplay
-./instal.sh
-cd /dlna
+./install.sh
+cd ../dlna
 ./install.sh

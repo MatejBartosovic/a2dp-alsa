@@ -1,3 +1,9 @@
+#!/bin/bash
+err_report() {
+    echo "Error on line $1"
+    exit 1
+}
+trap 'err_report "${BASH_SOURCE}" "${LINENO}"' ERR
 sudo apt-get update
 sudo apt -y install  build-essential autoconf automake libtool pkg-config
 sudo apt -y install libupnp-dev libgstreamer1.0-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav

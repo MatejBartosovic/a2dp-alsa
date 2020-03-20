@@ -1,3 +1,9 @@
+#!/bin/bash
+err_report() {
+    echo "Error on line $1"
+    exit 1
+}
+trap 'err_report "${BASH_SOURCE}" "${LINENO}"' ERR
 sudo apt update
 sudo apt -y install build-essential git xmltoman autoconf automake libtool libpopt-dev libconfig-dev libasound2-dev avahi-daemon libavahi-client-dev libssl-dev libsoxr-dev
 git clone https://github.com/mikebrady/shairport-sync.git

@@ -1,10 +1,16 @@
+#!/bin/bash
+err_report() {
+    echo "Error on line $1"
+    exit 1
+}
+trap 'err_report "${BASH_SOURCE}" "${LINENO}"' ERR
 ./compile_bluez.sh
 sudo cp -r config/* /etc/bluetooth
 
 #sudo sudo systemctl restart bluetooth.service
 
 sudo cp services/bt-agent.service /etc/systemd/system
-sudo cp services/config/blue-alsa.service /etc/systemd/system
+sudo cp services/blue-alsa.service /etc/systemd/system
 sudo cp services/blue-alsa-aplay.service /etc/systemd/system
 
 cd udev

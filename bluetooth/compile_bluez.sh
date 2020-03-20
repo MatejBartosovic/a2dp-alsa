@@ -1,5 +1,9 @@
-#!/bin/sh
-set -e
+#!/bin/bash
+err_report() {
+    echo "Error on line $1"
+    exit 1
+}
+trap 'err_report "${BASH_SOURCE}" "${LINENO}"' ERR
 codename=`lsb_release -c | awk '{print $2}'`
 echo $codename
 source_uri="deb-src\ http:\/\/raspbian.raspberrypi.org\/raspbian\/\ $codename\ main\ contrib\ non-free\ rpi"
