@@ -1,3 +1,5 @@
+export SHELLOPTS
+set -e
 cd alsa
 ./install.sh
 cd ../bluetooth
