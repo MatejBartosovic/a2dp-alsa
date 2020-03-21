@@ -1,2 +1,1 @@
 #!/bin/bash
-systemctl stop blue-alsa-aplay.service

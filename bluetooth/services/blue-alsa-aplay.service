@@ -1,6 +1,6 @@
 [Unit]
 Description=BlueAlsa-Aplay
-Requires=bluetooth.service blue-alsa.service
+Requires=bluetooth.service bluealsa.service
 [Service]
 Type=simple
 User=root

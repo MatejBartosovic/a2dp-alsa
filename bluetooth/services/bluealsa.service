@@ -1,12 +1,11 @@
 [Unit]
-Description=BluezAlsa proxy
-Requires=bluetooth.service bt-agent.service
+Description=BluezALSA proxy
+Requires=bluetooth.service
 After=bluetooth.service
+
 [Service]
 Type=simple
 User=root
-Group=audio
-Environment=LD_LIBRARY_PATH=/usr/local/lib
 ExecStart=/usr/bin/bluealsa -p a2dp-source -p a2dp-sink
 [Install]
 WantedBy=multi-user.target
