@@ -6,7 +6,7 @@ Type=simple
 User=root
 Group=audio
 Environment=LD_LIBRARY_PATH=/usr/local/lib
-ExecStart=/usr/bin/bluealsa-aplay 00:00:00:00:00:00 --profile-a2dp -d default
+ExecStart=/usr/bin/bluealsa-aplay 00:00:00:00:00:00 --profile-a2dp --pcm-buffer-time=100000 --pcm-period-time=20000 -d default
 [Install]
 WantedBy=multi-user.target
 
