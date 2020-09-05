@@ -6,6 +6,8 @@ cd ../bluetooth
 ./install.sh
 cd ../spotifyd
 ./install.sh
+cd ../raspotify
+./install.sh
 cd ../airplay
 ./install.sh
 cd ../dlna

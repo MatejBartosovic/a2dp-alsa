@@ -17,5 +17,5 @@ sudo cp spotifyd.service /etc/systemd/system/
 rm $file
 rm spotifyd
 sudo systemctl daemon-reload
-sudo sudo systemctl start spotifyd
-sudo sudo systemctl enable spotifyd
+#sudo sudo systemctl start spotifyd
+#sudo sudo systemctl enable spotifyd
