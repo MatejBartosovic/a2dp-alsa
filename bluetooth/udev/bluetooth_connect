@@ -1,2 +1,4 @@
 #!/bin/bash
+amixer -c1 sset Speaker 25%
 aplay /usr/local/etc/bluetooth_connect/Echo.wav --device default
+amixer -c1 sset Speaker 70%
